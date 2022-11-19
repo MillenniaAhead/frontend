@@ -25,6 +25,9 @@ const Lead = lazy(() => import(/*webpackChunkName:'LeadPage'*/ "@/pages/Lead"));
 const Product = lazy(() =>
   import(/*webpackChunkName:'ProductPage'*/ "@/pages/Product")
 );
+const OutletService = lazy(() =>
+  import(/*webpackChunkName:'OutletService'*/ "@/pages/service/OutletService")
+);
 
 const Logout = lazy(() =>
   import(/*webpackChunkName:'LogoutPage'*/ "@/pages/Logout")
@@ -48,6 +51,7 @@ export default function AppRouter() {
           />
           <PrivateRoute component={Lead} path="/lead" exact />
           <PrivateRoute component={Product} path="/product" exact />
+          <PrivateRoute component={OutletService} path="/outservice" exact />
           <PrivateRoute component={Setup} path="/setup" exact />
           <PrivateRoute component={Admin} path="/admin" exact />
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/ANUService.css'
+import '../../style/partials/ANUService.less'
 import { BsFolder} from 'react-icons/bs';
 import { TbFolders} from 'react-icons/tb';
 
