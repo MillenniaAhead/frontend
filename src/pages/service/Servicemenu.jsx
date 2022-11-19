@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import {IoReorderThreeOutline } from 'react-icons/io5';
 import {BsMenuButtonWide } from 'react-icons/bs';
-import '../CSS/ANUService.css'
+import '../../style/partials/ANUService.less'
 
 const Servicemenu = () => {
   const [toggle, setToggle]= useState(true)
