@@ -26,6 +26,14 @@ const Verify = lazy(() =>
   import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup/Verify")
 );
 
+const Reason = lazy(() =>
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/clients/Addreason")
+);
+
+const Source = lazy(() =>
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/clients/Addsource")
+);
+
 const Dashboard = lazy(() =>
   import(/*webpackChunkName:'DashboardPage'*/ "@/pages/Dashboard")
 );
@@ -71,6 +79,8 @@ export default function AppRouter() {
           <PrivateRoute component={Otp} path="/otp" exact />
           <PrivateRoute component={Resend} path="/resend" exact />
           <PrivateRoute component={Verify} path="/verify" exact />
+          <PrivateRoute component={Source} path="/source" exact />
+          <PrivateRoute component={Reason} path="/reason" exact />
           <PrivateRoute component={Lead} path="/lead" exact />
           <PrivateRoute component={Product} path="/product" exact />
           <PrivateRoute component={Setup} path="/setup" exact />
