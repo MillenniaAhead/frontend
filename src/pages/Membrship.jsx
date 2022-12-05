@@ -6,10 +6,9 @@ import Modal from 'react-bootstrap/Modal';
 import { InputAdornment } from '@mui/material';
 import InputGroup from 'react-bootstrap/InputGroup'
 import Image from "react-bootstrap/Image";
-import mobile from "./mobile.png";
-import { register } from '../../redux/membership/action';
+import { register } from '../redux/membership/action';
 import { useDispatch } from 'react-redux';
-import './style.css';
+import '../style/style.css';
 
 const MembrshipForm = () => {
 const [membershipDetails, setMembershipDetails] = useState({
@@ -42,12 +41,16 @@ let name, value;
 
   const dispatch = useDispatch();
   const memberName = membershipDetails.name;
+  const sendInfo = (e) => {
+    e.preventDefault();
+    dispatch(register(membershipDetails));
+  }
   return (
     <>
     <nav className="navbar navbar-expand-sm sticky-top navbar-light bg-white justify-content-between"> 
     <button type="button" className="btn btn-light btn-lg">X</button>          
     <form className="form-inline">
-  <button type="submit" className="btn btn-dark btn-lg" onClick={() => dispatch(register(memberName))} >Create membership</button>  
+  <button className="btn btn-dark btn-lg" onClick={sendInfo} >Create membership</button>  
   </form>
 </nav>
 <div className="container" >
@@ -104,7 +107,7 @@ let name, value;
               aria-label="Search"
               startAdornment={
                 <InputAdornment position="start">
-                  <SearchIcon/>
+                  
                 </InputAdornment>
               }
             />
@@ -193,7 +196,7 @@ let name, value;
                 onChange={handleInput}
                 value={membershipDetails.taxrate}
                 name="taxrate">  
-                <option value="notax" selected>No tax</option>
+                <option value="notax">No tax</option>
             </Form.Select>
             </Form.Group>
       </Card.Footer>
@@ -207,11 +210,11 @@ let name, value;
           </Card.Header>         
         <Card.Body >
               <div style={{display: "flex"}}>
-              <button class="dot" style={{backgroundColor: "#2B85E8"}} onClick={handleInput} name="colorcode" value="#2B85E8"/>
-              <button class="dot" style={{backgroundColor: "#192639"}} onClick={handleInput} name="colorcode" value="#192639"/>
-              <button class="dot" style={{backgroundColor: "#00A284"}} onClick={handleInput} name="colorcode" value="#00A284"/>
-              <button class="dot" style={{backgroundColor: "#E68F20"}} onClick={handleInput} name="colorcode" value="#E68F20"/>
-              <button class="dot" style={{backgroundColor: "#863FF5"}} onClick={handleInput} name="colorcode" value="#863FF5"/>             
+              <button className="dot" style={{backgroundColor: "#2B85E8"}} onClick={handleInput} name="colorcode" value="#2B85E8"/>
+              <button className="dot" style={{backgroundColor: "#192639"}} onClick={handleInput} name="colorcode" value="#192639"/>
+              <button className="dot" style={{backgroundColor: "#00A284"}} onClick={handleInput} name="colorcode" value="#00A284"/>
+              <button className="dot" style={{backgroundColor: "#E68F20"}} onClick={handleInput} name="colorcode" value="#E68F20"/>
+              <button className="dot" style={{backgroundColor: "#863FF5"}} onClick={handleInput} name="colorcode" value="#863FF5"/>             
               </div>             
         </Card.Body>
       </Card>
@@ -240,7 +243,7 @@ let name, value;
         Online membership sales are coming soon to India with payments in Fresha
         </div>
         <div className='mobile-div'>
-        <Image src={mobile} className='mobileImg'/>
+        <Image src="mobile.png" className='mobileImg'/>
         </div>
         </div>
     </Form.Group>
