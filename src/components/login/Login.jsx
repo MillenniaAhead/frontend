@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 import Image from "../../assets/Signup/image-1.png";
 import Logo from "../../assets/Signup/logo.png";
@@ -10,6 +11,26 @@ import Web from "../../assets/Signup/Web Help.png";
 import Dot from "../../assets/Signup/Ellipse.png";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleApi = () => {
+    console.log({ email });
+    axios
+      .post("https://reqres.in/api/login", {
+        email: email,
+      })
+      .then((result) => {
+        console.log(result.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <section className="vh-100 py-4">
       <div className="container d-flex">
@@ -64,6 +85,8 @@ const Login = () => {
             <div className="form-row">
               <div style={{ marginTop: "-8px" }} className="offset-1 col-lg-10">
                 <input
+                  value={email}
+                  onChange={handleEmail}
                   style={{
                     marginLeft: "100px",
                     borderWidth: "1px",
@@ -81,6 +104,7 @@ const Login = () => {
             <div className="form-row">
               <div className="d-grid py-3 col-10 mx-auto">
                 <button
+                  onClick={handleApi}
                   style={{
                     width: "395px",
                     marginLeft: "100px",
