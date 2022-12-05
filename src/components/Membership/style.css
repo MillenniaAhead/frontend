@@ -1,0 +1,119 @@
+html, body {
+    overflow: visible;
+}
+h1 {
+    font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 10px;
+  }
+  
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0%;
+    padding: 0%;
+}
+
+h2 {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 28px;
+    }
+
+.card {
+    margin-bottom: 20px;
+    width: 60rem;
+} 
+.servicebtn {
+    width: 60%;
+    height: 30px;    
+    padding-left: 15px;
+    color: #000000;
+    font-size: 15px;       
+    background: #F2F2F7;
+    border: 1px solid #F2F2F7;
+    border-radius: 4px;
+    
+}
+
+
+
+.dot {
+    height: 40px;
+    width: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    border: solid 2px rgba(0,0,0,0);
+  }
+  .dot:focus {
+    border-color: #232323;
+    outline: none;
+    
+  }
+
+.edit-service {
+    color: #1BB70B;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+.navbar {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+.descriptionCount {
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 200px;
+}
+
+.salesDiv {
+    background: rgba(27, 183, 11, 0.48);
+    border: 1px solid rgba(27, 183, 11, 0.48);
+    border-radius: 14px;
+    width: 70%;
+height: 100px;
+display: flex;
+}
+
+.online-text {
+    margin-top: 3%;
+    margin-left: 3%;
+  width: 60%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+.mobile-div {
+    align-items: right;
+}
+.mobileImg {
+    height: 90px;
+    width: 60px;
+   margin-left: 105px;
+   margin-top: 9.8px;
+}
+
+.planImg {
+    height: 30px;
+    width: 60px;
+   margin-left: 105px;
+   margin-top: 9.8px;
+}
+
+.quarterCircle {
+margin-right: 0px;
+margin-bottom: 0px;
+transform: translate(-50%, -50%);
+height: 100px;
+width: 200px;
+border-radius: 150px 150px 0 0;
+background-color: rgb(215, 21, 76);
+}
+

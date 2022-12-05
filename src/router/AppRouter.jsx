@@ -5,6 +5,7 @@ import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
 import PageLoader from "@/components/PageLoader";
 import Setup from "@/pages/settings/Setup";
+import MembrshipForm from "@/components/Membership/Membrship";
 
 const Dashboard = lazy(() =>
   import(/*webpackChunkName:'DashboardPage'*/ "@/pages/Dashboard")
@@ -52,12 +53,15 @@ export default function AppRouter() {
           <PrivateRoute component={Admin} path="/admin" exact />
 
           <PrivateRoute component={Logout} path="/logout" exact />
+          <PrivateRoute element={<MembrshipForm />} path="/membership" />
           <PublicRoute path="/login" render={() => <Redirect to="/" />} />
           <Route
             path="*"
             component={NotFound}
             render={() => <Redirect to="/notfound" />}
           />
+// new rout for membership
+<Route path="/membership" element={<MembrshipForm />} />
         </Switch>
       </AnimatePresence>
     </Suspense>
