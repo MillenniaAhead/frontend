@@ -1,9 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 import Image from "../../assets/Signup/image-1.png";
 import Logo from "../../assets/Signup/logo.png";
 
 const Signup = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [password, setPassword] = useState("");
+  const [number, setNumber] = useState("");
+  const [country, setCountry] = useState("India");
+
+  const handleFirstName = (e) => {
+    setFirstName(e.target.value);
+  };
+
+  const handleLastName = (e) => {
+    setLastName(e.target.value);
+  };
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleNumber = (e) => {
+    setNumber(e.target.value);
+  };
+
+  const handleCountry = (e) => {
+    setCountry(e.target.value);
+  };
+
+  const handleApi = () => {
+    console.log({ firstName, lastName, password, number, country });
+    axios
+      .post("https://reqres.in/api/register", {
+        firstName: firstName,
+        lastName: lastName,
+        password: password,
+        number: number,
+        country: country,
+      })
+      .then((result) => {
+        console.log(result.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <section className="vh-100 py-4">
       <div className="container d-flex">
@@ -91,6 +136,8 @@ const Signup = () => {
                   First Name
                 </p>
                 <input
+                  value={firstName}
+                  onChange={handleFirstName}
                   style={{
                     marginTop: "-15px",
                     fontSize: "14px",
@@ -116,6 +163,8 @@ const Signup = () => {
                   Last Name
                 </p>
                 <input
+                  value={lastName}
+                  onChange={handleLastName}
                   style={{
                     marginTop: "-15px",
                     marginLeft: "65px",
@@ -142,6 +191,8 @@ const Signup = () => {
                 </p>
                 <div>
                   <input
+                    value={password}
+                    onChange={handlePassword}
                     style={{
                       marginTop: "-15px",
                       fontSize: "14px",
@@ -177,6 +228,8 @@ const Signup = () => {
                   }}
                 >
                   <input
+                    value={number}
+                    onChange={handleNumber}
                     style={{
                       display: "inline",
                       marginLeft: "-4px",
@@ -201,6 +254,8 @@ const Signup = () => {
                 </p>
                 <div>
                   <input
+                    value={country}
+                    onChange={handleCountry}
                     style={{
                       marginTop: "-15px",
                       marginLeft: "110px",
@@ -254,6 +309,7 @@ const Signup = () => {
                   </p>
                 </div>
                 <button
+                  onClick={handleApi}
                   style={{
                     marginBottom: "20px",
                     width: "445px",
