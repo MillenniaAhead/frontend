@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,7 +17,7 @@ const ClintsCard = () => {
         <Stack direction="horizontal" gap={3} className ='m-2'>
         <div className=""> 
         <h2>Clints List</h2>
-        <p>View,add,edit and delet your clinent's details. Learn More</p>
+        <p>View,add,edit and delet your clinent's details. <Link> Learn More </Link></p>
         </div>
         <div className=" ms-auto">
         <DropdownButton id="dropdown-item-button" title="Option" variant="outline-secondary" >
@@ -27,7 +28,7 @@ const ClintsCard = () => {
       </DropdownButton>
         </div>
         <div className=""> <Button variant="secondary">Add Clint</Button></div>
-      </Stack>
+         </Stack>
     
             <Card style={{ width: '71rem' }} >
             

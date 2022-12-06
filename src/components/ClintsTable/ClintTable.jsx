@@ -1,10 +1,11 @@
-import React from 'react'
+import React  from 'react'
 import { TableContainer,Table,TableHead,TableBody,TableRow,TableCell,Paper } from '@mui/material'
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
 
 const ClintTable = () => {
+ 
   return (
     <TableContainer component={Paper}>
       <Table aria-label = 'sample table'>

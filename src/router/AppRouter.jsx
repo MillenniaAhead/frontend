@@ -19,6 +19,12 @@ const Customer = lazy(() =>
 const ClintsList = lazy(() =>
   import(/*webpackChunkName:'ClintsLitsPage'*/ "@/pages/clintList/ClintsList")
 );
+const Reviews = lazy(() =>
+  import(/*webpackChunkName:'RiviewsPage'*/ "@/pages/Reviews/Reviews")
+);
+const Clints = lazy(() =>
+  import(/*webpackChunkName:'ClintsPage'*/ "@/pages/clintList/Clints")
+);
 
 
 const SelectCustomer = lazy(() =>
@@ -46,6 +52,8 @@ export default function AppRouter() {
           <PrivateRoute path="/" component={Dashboard} exact />
           <PrivateRoute component={Customer} path="/customer" exact />
           <PrivateRoute component={ClintsList} path="/clintslist" exact />
+          <PrivateRoute component={Clints} path="/clints" exact />
+          <PrivateRoute component={Reviews} path="/reviews" exact />
           <PrivateRoute
             component={SelectCustomer}
             path="/selectcustomer"
