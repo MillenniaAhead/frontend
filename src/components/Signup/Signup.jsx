@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 import Image from "../../assets/Signup/image-1.png";
 import Logo from "../../assets/Signup/logo.png";
@@ -50,15 +51,15 @@ const Signup = () => {
   };
 
   return (
-    <section className="vh-100 py-4">
+    <section style={{ backgroundColor: "white" }} className="vh-100 py-4">
       <div className="container d-flex">
         <img
           src={Image}
           style={{
             marginTop: "-27px",
-            marginLeft: "-120px",
-            width: "700px",
-            height: "720px",
+            marginLeft: "-130px",
+            width: "780px",
+            height: "785px",
             objectFit: "cover",
             objectPosition: "left",
           }}
@@ -66,22 +67,17 @@ const Signup = () => {
         />
 
         <div
-          style={{ marginTop: "10px", paddingTop: "-30px" }}
+          style={{ marginTop: "40px", paddingTop: "-30px" }}
           className="col-sm-6 text-center"
         >
-          <img
-            style={{ marginLeft: "150px" }}
-            width={60}
-            src={Logo}
-            alt="logo"
-          />
+          <img width={65} src={Logo} alt="logo" />
           <h4
             style={{ color: ["#4E4E4E"], cursor: "default" }}
-            className="py-2 fw-bold fs-5"
+            className="py-2 fw-bold fs-4"
           >
             <span
-              className="fs-5"
-              style={{ color: ["#1BB70B"], marginLeft: "150px" }}
+              className="fs-4"
+              style={{ color: ["#1BB70B"], marginLeft: "10px" }}
             >
               OUTLET
             </span>
@@ -90,10 +86,10 @@ const Signup = () => {
           <p
             style={{
               fontWeight: "bold",
-              fontSize: "20px",
+              fontSize: "22px",
               marginTop: "-10px",
               cursor: "default",
-              marginLeft: "150px",
+              marginLeft: "10px",
             }}
             className="px-3"
           >
@@ -101,9 +97,9 @@ const Signup = () => {
           </p>
           <p
             style={{
-              marginLeft: "150px",
+              marginLeft: "10px",
               marginTop: "-10px",
-              fontSize: "14px",
+              fontSize: "12px",
               fontWeight: 600,
             }}
           >
@@ -111,9 +107,9 @@ const Signup = () => {
           </p>
           <p
             style={{
-              marginLeft: "115px",
-              marginTop: "-20px",
-              fontSize: "14px",
+              marginLeft: "50px",
+              marginTop: "-15px",
+              fontSize: "12px",
               fontWeight: 600,
             }}
           >
@@ -128,7 +124,7 @@ const Signup = () => {
                 <p
                   style={{
                     cursor: "default",
-                    fontSize: "14px",
+                    fontSize: "16px",
                     marginLeft: "-260px",
                     fontWeight: 600,
                   }}
@@ -143,8 +139,8 @@ const Signup = () => {
                     fontSize: "14px",
                     marginLeft: "65px",
                     borderWidth: "1px",
-                    height: "30px",
-                    width: "97%",
+                    height: "35px",
+                    width: "80%",
                     borderRadius: "6px",
                   }}
                   type="email"
@@ -154,7 +150,7 @@ const Signup = () => {
                 <p
                   style={{
                     cursor: "default",
-                    fontSize: "14px",
+                    fontSize: "16px",
                     marginTop: "15px",
                     marginLeft: "-260px",
                     fontWeight: 600,
@@ -170,8 +166,8 @@ const Signup = () => {
                     marginLeft: "65px",
                     borderWidth: "1px",
                     fontSize: "14px",
-                    height: "30px",
-                    width: "97%",
+                    height: "35px",
+                    width: "80%",
                     borderRadius: "6px",
                   }}
                   type="email"
@@ -181,7 +177,7 @@ const Signup = () => {
                 <p
                   style={{
                     cursor: "default",
-                    fontSize: "14px",
+                    fontSize: "16px",
                     marginTop: "15px",
                     marginLeft: "-270px",
                     fontWeight: 600,
@@ -198,8 +194,8 @@ const Signup = () => {
                       fontSize: "14px",
                       marginLeft: "65px",
                       borderWidth: "1px",
-                      height: "30px",
-                      width: "97%",
+                      height: "35px",
+                      width: "80%",
                       borderRadius: "6px",
                     }}
                     type="password"
@@ -213,28 +209,36 @@ const Signup = () => {
                   style={{
                     cursor: "default",
                     fontSize: "16px",
-                    marginTop: "15px",
+                    marginTop: "20px",
                     marginLeft: "-220px",
                     fontWeight: 600,
                   }}
                 >
                   Mobile number
                 </p>
-                <div
-                  style={{
-                    marginLeft: "115px",
-                    borderColor: "lightgray",
-                    marginTop: "-12px",
-                  }}
-                >
+                <div style={{ marginTop: "-15px" }}>
+                  <span
+                    style={{
+                      marginLeft: "40px",
+                      fontWeight: 500,
+                      padding: "7.2px",
+                      cursor: "default",
+                    }}
+                    className="border rounded"
+                  >
+                    +91
+                    <MdKeyboardArrowDown
+                      style={{ marginLeft: "5px", fontSize: "25px" }}
+                    />
+                  </span>
                   <input
                     value={number}
                     onChange={handleNumber}
                     style={{
-                      display: "inline",
-                      marginLeft: "-4px",
-                      width: "450px",
-                      height: "40px",
+                      display: "inline-block",
+                      marginLeft: "-2px",
+                      width: "300px",
+                      height: "35px",
                     }}
                     type="number"
                     className="form-control rounded-end"
@@ -258,10 +262,10 @@ const Signup = () => {
                     onChange={handleCountry}
                     style={{
                       marginTop: "-15px",
-                      marginLeft: "110px",
+                      marginLeft: "113px",
                       borderWidth: "1px",
-                      height: "40px",
-                      width: "81%",
+                      height: "35px",
+                      width: "67%",
                       backgroundColor: ["#f2f2f7"],
                       borderRadius: "6px",
                     }}
@@ -312,8 +316,9 @@ const Signup = () => {
                   onClick={handleApi}
                   style={{
                     marginBottom: "20px",
-                    width: "445px",
-                    marginLeft: "110px",
+                    borderRadius: "5px",
+                    width: "68%",
+                    marginLeft: "45px",
                     backgroundColor: ["#4E4E4E"],
                     color: "white",
                   }}

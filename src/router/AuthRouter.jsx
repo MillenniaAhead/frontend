@@ -5,7 +5,11 @@ import PublicRoute from "./PublicRoute";
 import PageLoader from "@/components/PageLoader";
 
 const Login = lazy(() =>
-  import(/*webpackChunkName:'LoginPage'*/ "@/pages/Login")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Login")
+);
+
+const Signup = lazy(() =>
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Signup")
 );
 
 const NotFound = lazy(() =>
@@ -23,7 +27,7 @@ export default function AuthRouter() {
             component={Login}
             render={() => <Redirect to="/login" />}
           />
-          <PublicRoute component={Login} path="/login" exact />
+          <PublicRoute component={Signup} path="/signup" exact />
           <Route
             path="*"
             component={NotFound}

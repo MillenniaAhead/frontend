@@ -32,15 +32,15 @@ const Login = () => {
   };
 
   return (
-    <section className="vh-100 py-4">
+    <section style={{ backgroundColor: "white" }} className="vh-100 py-4">
       <div className="container d-flex">
         <img
           src={Image}
           style={{
             marginTop: "-27px",
-            marginLeft: "-120px",
-            width: "680px",
-            height: "632px",
+            marginLeft: "-130px",
+            width: "690px",
+            height: "680px",
             objectFit: "cover",
             objectPosition: "left",
           }}
@@ -103,7 +103,8 @@ const Login = () => {
             </div>
             <div className="form-row">
               <div className="d-grid py-3 col-10 mx-auto">
-                <button
+                <a
+                  href="/signup"
                   onClick={handleApi}
                   style={{
                     width: "395px",
@@ -115,7 +116,7 @@ const Login = () => {
                   type="button"
                 >
                   Continue
-                </button>
+                </a>
               </div>
             </div>
             <div style={{ marginTop: "-8px" }} className="form-row d-flex px-2">
@@ -234,7 +235,7 @@ const Login = () => {
             <p
               style={{
                 fontSize: "14px",
-                marginTop: "8px",
+                marginTop: "18px",
                 marginLeft: "150px",
                 fontWeight: 500,
                 cursor: "default",
@@ -246,7 +247,7 @@ const Login = () => {
               style={{
                 fontSize: "14px",
                 color: "gray",
-                marginTop: "-20px",
+                marginTop: "-15px",
                 cursor: "default",
                 marginLeft: "150px",
               }}
@@ -256,7 +257,7 @@ const Login = () => {
             <p
               style={{
                 color: ["#1E49E2"],
-                marginTop: "-20px",
+                marginTop: "-15px",
                 fontSize: "14px",
                 fontWeight: 500,
                 cursor: "pointer",

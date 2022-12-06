@@ -6,24 +6,20 @@ import PublicRoute from "./PublicRoute";
 import PageLoader from "@/components/PageLoader";
 import Setup from "@/pages/settings/Setup";
 
-const Login = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup/Login")
-);
-
 const Signup = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup/Signup")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Signup")
 );
 
 const Otp = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup/Otp")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Otp")
 );
 
 const Resend = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup/Resend")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Resend")
 );
 
 const Verify = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup/Verify")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Verify")
 );
 
 const Reason = lazy(() =>
@@ -74,7 +70,6 @@ export default function AppRouter() {
             path="/selectcustomer"
             exact
           />
-          <PrivateRoute component={Login} path="/login" exact />
           <PrivateRoute component={Signup} path="/signup" exact />
           <PrivateRoute component={Otp} path="/otp" exact />
           <PrivateRoute component={Resend} path="/resend" exact />
