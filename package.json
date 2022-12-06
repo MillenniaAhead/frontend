@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.17",
     "antd": "^4.16.7",
     "axios": "^0.21.1",
     "bootstrap": "^5.2.2",
