@@ -5,6 +5,10 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Card from 'react-bootstrap/Card';
 import InvoiceCard from '@/components/invoice/InvoiceCard';
+import PaymentCard from '@/components/PaymentMethod/PaymentCard';
+
+
+
 
 const Clints = () => {
   return (
@@ -48,7 +52,7 @@ const Clints = () => {
      
      </Card>
        <hr></hr>
-        <Nav variant="pills" className="flex-column">
+        <Nav className="flex-column">
          
           <Nav.Item>
             <Nav.Link eventKey="first">Client Feed</Nav.Link>
@@ -88,7 +92,7 @@ const Clints = () => {
       <Col sm={7}>
         <Tab.Content>
           <Tab.Pane eventKey="first">
-          <h2>Client Feed</h2>
+          <h2 >Client Feed</h2>
           </Tab.Pane>
           <Tab.Pane eventKey="second">
             <h2>Client details</h2>
@@ -101,6 +105,8 @@ const Clints = () => {
           </Tab.Pane>
           <Tab.Pane eventKey="five">
             <h2>Payment method</h2>
+            <PaymentCard />
+           
           </Tab.Pane>
           <Tab.Pane eventKey="six">
             <h2>Membership</h2>
