@@ -104,7 +104,7 @@ const Login = () => {
             <div className="form-row">
               <div className="d-grid py-3 col-10 mx-auto">
                 <a
-                  href="/signup"
+                  href="/"
                   onClick={handleApi}
                   style={{
                     width: "395px",

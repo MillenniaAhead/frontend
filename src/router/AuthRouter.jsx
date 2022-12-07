@@ -8,10 +8,6 @@ const Login = lazy(() =>
   import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Login")
 );
 
-const Signup = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Signup")
-);
-
 const NotFound = lazy(() =>
   import(/*webpackChunkName:'NotFoundPage'*/ "@/pages/NotFound")
 );
@@ -27,7 +23,7 @@ export default function AuthRouter() {
             component={Login}
             render={() => <Redirect to="/login" />}
           />
-          <PublicRoute component={Signup} path="/signup" exact />
+          <PublicRoute component={Login} path="/login" exact />
           <Route
             path="*"
             component={NotFound}

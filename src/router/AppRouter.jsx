@@ -6,6 +6,10 @@ import PublicRoute from "./PublicRoute";
 import PageLoader from "@/components/PageLoader";
 import Setup from "@/pages/settings/Setup";
 
+const Login = lazy(() =>
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Login")
+);
+
 const Signup = lazy(() =>
   import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Signup")
 );
@@ -70,6 +74,7 @@ export default function AppRouter() {
             path="/selectcustomer"
             exact
           />
+           <PrivateRoute component={Login} path="/login" exact />
           <PrivateRoute component={Signup} path="/signup" exact />
           <PrivateRoute component={Otp} path="/otp" exact />
           <PrivateRoute component={Resend} path="/resend" exact />
