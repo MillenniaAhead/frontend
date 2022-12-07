@@ -6,6 +6,7 @@ import Tab from 'react-bootstrap/Tab';
 import Card from 'react-bootstrap/Card';
 import InvoiceCard from '@/components/invoice/InvoiceCard';
 import PaymentCard from '@/components/PaymentMethod/PaymentCard';
+import CloseButton from 'react-bootstrap/CloseButton';
 
 
 
@@ -15,20 +16,20 @@ const Clints = () => {
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
     <Row>
       <Col sm={2}>
+     <div className='m-3'>
+     <CloseButton />  
+     </div>
        <div className='m-5'>
-           
+       
             <div>
             0
             <p className='text-secondary'>Total sales (INR)</p>
             </div>
             <div>
              1
-             <p className='text-secondary'>Total views</p>
+             <p className='text-secondary'>Total Visits</p>
              </div>
-             <div>
-               0
-              <p className='text-secondary'>Total views (INR)</p>
-             </div>
+          
              <div>
                 0
                 <p className='text-secondary'>Completed</p>
