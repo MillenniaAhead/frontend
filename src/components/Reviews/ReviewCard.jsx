@@ -19,7 +19,7 @@ const ReviewCard = () => {
                     <p>See star ratings and reviews left by clintes after their visit .<Link> Learn More </Link></p>
                 </div>
             </Stack>
-            <Card style={{ width: '71rem' }} className='mb-5' >
+            <Card style={{ width: '71rem' }} className='mb-3' >
             
                     <Card.Body>
             
