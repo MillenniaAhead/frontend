@@ -3,6 +3,9 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
+import ProductsCard from '@/components/ProductsComponents/ProductsCard';
+
+import ProductListCard from '@/components/ProductsComponents/ProductListCard';
 const Products = () => {
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first" className='border-1'>
@@ -10,33 +13,35 @@ const Products = () => {
       <Col sm={3}>
         <Nav variant="tabs" className="flex-column border-1 m-2 p-2 ">
           <Nav.Item >
-            <Nav.Link eventKey="first" className='text-dark'>Products</Nav.Link>
+            <Nav.Link eventKey="first" className='text-dark' disabled><b>Products </b></Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="second" className='text-dark'>Porducts List</Nav.Link>
+            <Nav.Link eventKey="second" className='text-dark'><b>Porducts List</b></Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="third" className='text-dark'>Inventory</Nav.Link>
+            <Nav.Link eventKey="third" className='text-dark'><b>Inventory </b></Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="fourth" className='text-dark'>Stoktakes</Nav.Link>
+            <Nav.Link eventKey="fourth" className='text-dark'><b>Stoktakes </b></Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="five" className='text-dark'>Stock Order</Nav.Link>
+            <Nav.Link eventKey="five" className='text-dark'><b>Stock Order </b></Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="six" className='text-dark'>Suppliers</Nav.Link>
+            <Nav.Link eventKey="six" className='text-dark'><b>Suppliers </b></Nav.Link>
           </Nav.Item>
         </Nav>
       </Col>
       <Col sm={9}>
-        <Tab.Content className='m-4 text-dark'>
-          <Tab.Pane eventKey="first">
-            <h2> Products test1</h2>
+        <Tab.Content className='m-5 text-dark'>
+          <Tab.Pane eventKey="first" disabled>
+            
           </Tab.Pane>
           <Tab.Pane eventKey="second">
-            <h2>products test 2</h2>
-          </Tab.Pane>
+             <ProductsCard />
+             <ProductListCard />
+              
+            </Tab.Pane>
           <Tab.Pane eventKey="third">
             <h2>Inventory</h2>
           </Tab.Pane>
