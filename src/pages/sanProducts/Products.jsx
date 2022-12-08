@@ -4,8 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import ProductsCard from '@/components/ProductsComponents/ProductsCard';
-
 import ProductListCard from '@/components/ProductsComponents/ProductListCard';
+import StockstakesCard from '@/components/StokesTakeComponents/StockstakesCard';
+import StokesCards from '@/components/StokesTakeComponents/StokesCards';
 const Products = () => {
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first" className='border-1'>
@@ -46,10 +47,11 @@ const Products = () => {
             <h2>Inventory</h2>
           </Tab.Pane>
           <Tab.Pane eventKey="fourth">
-            <h2>Stoktakes</h2>
+          <StockstakesCard />
+          <StokesCards />
           </Tab.Pane>
           <Tab.Pane eventKey="five">
-            <h2>Stock Order</h2>
+            <h2>Stock order</h2>
           </Tab.Pane>
           <Tab.Pane eventKey="six">
             <h2>Suppliers</h2>

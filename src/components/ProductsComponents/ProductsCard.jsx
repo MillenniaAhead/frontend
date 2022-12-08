@@ -12,7 +12,7 @@ const ProductsCard = () => {
         <p>Add and manage your product in stock. <Link>Learn more</Link> </p>
       </div>
       <div className="bg-light border ms-auto"><DropDrownBtn/></div>
-      <div className="bg-light border"><Button variant="secondary">Add new product</Button></div>
+      <div className="bg-light border"><Button variant="secondary">Add new </Button></div>
     </Stack>
   )
 }
