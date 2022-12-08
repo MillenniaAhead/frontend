@@ -7,31 +7,35 @@ import PageLoader from "@/components/PageLoader";
 import Setup from "@/pages/settings/Setup";
 
 const Login = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Login")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/Sign up email ID/Login")
 );
 
 const Signup = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Signup")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/Sign up email ID/Signup")
 );
 
 const Otp = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Otp")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/Sign up email ID/Otp")
 );
 
 const Resend = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Resend")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/Sign up email ID/Resend")
 );
 
 const Verify = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/signup & Login/Verify")
+  import(/*webpackChunkName:'AdminPage'*/ "@/pages/Sign up email ID/Verify")
 );
 
 const Reason = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/clients/Addreason")
+  import(
+    /*webpackChunkName:'AdminPage'*/ "@/pages/SAN setting clients/Addreason"
+  )
 );
 
 const Source = lazy(() =>
-  import(/*webpackChunkName:'AdminPage'*/ "@/pages/clients/Addsource")
+  import(
+    /*webpackChunkName:'AdminPage'*/ "@/pages/SAN setting clients/Addsource"
+  )
 );
 
 const Dashboard = lazy(() =>
@@ -74,7 +78,7 @@ export default function AppRouter() {
             path="/selectcustomer"
             exact
           />
-           <PrivateRoute component={Login} path="/login" exact />
+          <PrivateRoute component={Login} path="/login" exact />
           <PrivateRoute component={Signup} path="/signup" exact />
           <PrivateRoute component={Otp} path="/otp" exact />
           <PrivateRoute component={Resend} path="/resend" exact />
