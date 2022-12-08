@@ -9,6 +9,8 @@ import StockstakesCard from '@/components/StokesTakeComponents/StockstakesCard';
 import StokesCards from '@/components/StokesTakeComponents/StokesCards';
 import StockerOrder from '@/components/StocksOrderComponents/StockerOrder';
 import StocksCard from '@/components/StocksOrderComponents/StocksCard';
+import SupplierCard from '@/components/SupplierComponents/SupplierCard';
+import SupplierListCard from '@/components/SupplierComponents/SupplierListCard';
 const Products = () => {
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first" className='border-1'>
@@ -57,7 +59,8 @@ const Products = () => {
             <StocksCard />
           </Tab.Pane>
           <Tab.Pane eventKey="six">
-            <h2>Suppliers</h2>
+            <SupplierCard />
+            <SupplierListCard />
           </Tab.Pane>
         </Tab.Content>
       </Col>
