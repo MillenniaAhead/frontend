@@ -22,14 +22,16 @@ const BasicInfo = () => {
 
             <p><b> Product Brand </b></p>
             <p className='text-success'>Select a brand</p> 
-            
+
              <ProductFloating />
 
              <Form.Group className="mb-3">
                 <Form.Label> <b>Product Discription </b></Form.Label>
                 <Form.Control placeholder=""  />
              </Form.Group>
-       
+        
+             <p><b> Product Category </b></p>
+            <p className='text-success'>Select a Category</p> 
      </Card.Body>
      </Card>
   )
