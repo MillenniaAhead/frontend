@@ -12,6 +12,7 @@ import StocksCard from '@/components/StocksOrderComponents/StocksCard';
 import SupplierCard from '@/components/SupplierComponents/SupplierCard';
 import SupplierListCard from '@/components/SupplierComponents/SupplierListCard';
 const Products = () => {
+  
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first" className='border-1'>
     <Row>
@@ -35,8 +36,11 @@ const Products = () => {
           <Nav.Item>
             <Nav.Link eventKey="six" className='text-dark'><b>Suppliers </b></Nav.Link>
           </Nav.Item>
+         
         </Nav>
+        <div className="vr" />
       </Col>
+     
       <Col sm={9}>
         <Tab.Content className='m-5 text-dark'>
           <Tab.Pane eventKey="first" disabled>
