@@ -16,7 +16,7 @@ const BasicInfo = () => {
         </Form.Group>
 
         <Form.Group className="mb-3">
-                <Form.Label> <div>Product Name <span className='text-secondary'>(optional)</span> </div></Form.Label>
+                <Form.Label> <div><b>Product Name </b> <span className='text-secondary'>(optional)</span> </div></Form.Label>
                 <Form.Control placeholder="UPC,EAN,GTIN"  />
         </Form.Group>
 

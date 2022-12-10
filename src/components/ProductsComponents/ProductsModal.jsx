@@ -28,7 +28,7 @@ const ProductsModal = () => {
          <Row>
          <Stack direction="horizontal" gap={3}>
          <div className="bg-light border">
-         <Modal.Header closeButton>
+         <Modal.Header closeButton className='mt-3'>
           
          </Modal.Header>
          </div>
