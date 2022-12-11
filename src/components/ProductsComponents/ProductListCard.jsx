@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import ImportPro from './ImportProMod'
+
 
 import Logo from './image/logo-1.png'
 
@@ -12,7 +13,7 @@ const ProductListCard = () => {
          <img src={Logo} alt='' />
          <h5><b>No products yet</b></h5>
          <p className='text-secondary'>Your products will appear here here.Import <br></br> produtcs in minutes and start selling theme <br></br> online and at your location</p>
-         <Button variant="secondary">Import Product</Button>
+         <ImportPro />
          </div>
         </Card.Body>
    </Card>
