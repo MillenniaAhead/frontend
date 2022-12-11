@@ -1,5 +1,6 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
+import '../CSS/ClientList.css'
 
 const ClientList = () => {
     return (
@@ -7,8 +8,8 @@ const ClientList = () => {
             <div>
             <div className='d-flex justify-content-between mx-3 mt-5 '>
             <div>
-                <h2>Clients list</h2>
-                <p>View, add, edit and delete your client’s details. Learn more</p>
+                <div className='d-flex align-items-center'><h2>Clients list</h2> <p className='three '>3</p></div>
+                <p className='fs-5'>View, add, edit and delete your client’s details. Learn more</p>
             </div>
             <div className='d-flex align-items-start'>
             <Dropdown className='p-2' style={{marginRight:'15px'}}>
@@ -23,10 +24,21 @@ const ClientList = () => {
       </Dropdown.Menu>
     </Dropdown>
             
-    <button type="button" style={{height:"60px", width:"150px"}} class="btn btn-secondary" >Add client</button>
+    <button type="button" style={{height:"60px", width:"150px", marginTop:'8px'}} class="btn btn-secondary" >Add client</button>
 
             </div>
         </div>
+            </div>
+            <div className='container'>
+                <div className="row">
+                    <div className='col-8'>
+                        the
+                    </div>
+                    <div className='col-4 client'>
+                <p>kkdi</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

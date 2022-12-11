@@ -18,13 +18,13 @@ const ClientsAll = () => {
               <Nav.Link eventKey="second">Clients list</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="third">Clients list</Nav.Link>
+              <Nav.Link eventKey="third">Reviews</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="forth">Clients list</Nav.Link>
+              <Nav.Link eventKey="forth">Automated messages</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="fifth">Clients list</Nav.Link>
+              <Nav.Link eventKey="fifth">Notifications</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link eventKey="sixth">Clients list</Nav.Link>
