@@ -8,18 +8,32 @@ import Col from 'react-bootstrap/Col';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+
+
 const Pricing = () => {
   return (
     <Card className='mb-3'>
       <Card.Header> Pricing</Card.Header>
       <Card.Body>
-        <p> <b> Supply price</b> </p>
-         <Card.Header>
+         <Card.Body>
+         <p> <b> Supply price</b> </p>
+         
          <InputGroup>
          <InputGroup.Text><p className='text-secondary'>INR</p></InputGroup.Text>
          <Form.Control as="textarea" aria-label="With textarea" />
          </InputGroup>
-         </Card.Header>
+         
+         </Card.Body>
+         <hr
+         style={{
+           background: 'lime',
+           color: 'lime',
+           borderColor: 'lime',
+           height: '1px',
+           width: '100%'
+         }}
+       />
+         
          <p className='mt-2'><b> Retail sales</b></p>
          <p className='text-secondary'>Allow sales of this product at checkout.</p>
          <FormGroup>

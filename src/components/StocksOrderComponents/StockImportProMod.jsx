@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const ImportProMod = () => {
+const ProductsModal = () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -80,4 +80,4 @@ const ImportProMod = () => {
   )
 }
 
-export default ImportProMod
+export default ProductsModal

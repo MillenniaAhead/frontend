@@ -7,13 +7,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
+import Form from 'react-bootstrap/Form';
 
 
 
 
 
 
-const ImportProMod = () => {
+const StoktakeProMod= () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -21,10 +22,10 @@ const ImportProMod = () => {
   return (
     <>
       <Button variant="secondary" onClick={handleShow}  >
-        Import products
+        Add New
       </Button>
 
-        <Modal show={show} onHide={handleClose} className='text-center'   size="xl">
+        <Modal show={show} onHide={handleClose} className=''   size="xl">
         <Container>
          <Row>
          <Stack direction="horizontal" gap={3} className =''>
@@ -37,7 +38,7 @@ const ImportProMod = () => {
          <div className="bg-light border ms-auto border-1">
         
          <Button variant="secondary" onClick={handleClose}>
-        Next Step
+         Start stocktake
          </Button>  
          </div>
       
@@ -59,17 +60,30 @@ const ImportProMod = () => {
       
         <Modal.Body>
             <Container>
-               <Row>
-                 <span className='text-secondary'> Import products</span>
-                 <span> <b><h4> Upload file</h4> </b></span>
-                 <span className='mb-4'> Upload a CSV file with your product data, or download and fill the template below <Link> Learn more</Link>  </span>
-                   <Card className='w-50  mx-auto'>
-
-                    <p className='text-center mt-5'>For the best quality upload, input your data into the template below,
-                    then upload the file to import.</p>
-                    <span className='mt-2'><h6>Download template</h6></span>
-                   </Card>
-               </Row>
+                <Row>
+                   <div className='text-center'>
+                   <p className='text-secondary'> Create a new stocktake </p>
+                   <h4> Add the stocktake info</h4>
+                   <p className='text-secondary'>Start a full inventory count to keep accurate stock levels.<Link> Learn more </Link></p>
+                   </div>
+                   <Card className='mx-auto w-50 '>
+                   <Card.Header>
+                  <b>  Stocktake info</b>
+                   </Card.Header>
+                   <Card.Body>
+            
+                    <Form.Group className="mb-3">
+                            <Form.Label> <b>Stocktake name <span className='text-secondary'> (Optional)</span>  </b></Form.Label>
+                            <Form.Control placeholder=""  />
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                            <Form.Label> <b>Stocktake description  </b></Form.Label>
+                            <Form.Control placeholder=""  />
+                    </Form.Group>
+             
+                 </Card.Body>
+                 </Card>
+                </Row>
             </Container>
       
 
@@ -80,4 +94,4 @@ const ImportProMod = () => {
   )
 }
 
-export default ImportProMod
+export default StoktakeProMod

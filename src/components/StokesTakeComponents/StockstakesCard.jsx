@@ -3,6 +3,7 @@ import Stack from 'react-bootstrap/Stack'
 import { Link } from 'react-router-dom'
 
 import Button from 'react-bootstrap/Button';
+import StoktakeProMod from './StoktakeProMod';
 
 const StockstakesCard = () => {
   return (
@@ -13,7 +14,8 @@ const StockstakesCard = () => {
       <p>Count and record the amount and value of stocke your business holds . <Link>Learn more</Link> </p>
     </div>
     
-    <div className="bg-light border ms-auto"><Button variant="secondary">Add new </Button></div>
+    <div className="bg-light border ms-auto">  <StoktakeProMod /></div>
+   
   </Stack>
   )
 }
