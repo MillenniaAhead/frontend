@@ -57,16 +57,18 @@ online.</h3>
             <div className='border rounded mx-4 mt-4 d-flex justify-content-between align-items-center
 ' style={{height:'90px', 
                           backgroundColor:'rgba(217, 217, 217, 0.16)'}}>
+                           <div className='d-flex align-items-center'>
                            <div>
                            <input style={{width:'560px'}} className=' border-0 rounded-pill ms-3 
                               text-center text-secondary py-2' type="text" placeholder='Search by 
                                name, email or mobile number'/>
                            </div>
-                           <div>
-                                <p>filter</p>
+                           <div className='mt-3 ms-3'>
+                                <p className='fs-5 '>filter</p>
+                           </div>
                            </div>
                            <div>
-                            <p>First name(A-Z)</p>
+                            <p className='fs-5 '>First name(A-Z)</p>
                            </div>
 
             </div>
