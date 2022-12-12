@@ -1,5 +1,8 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
+import Card from 'react-bootstrap/Card';
+import client from '../../images/ClientList/client.jpg'
+
 import '../CSS/ClientList.css'
 
 const ClientList = () => {
@@ -29,15 +32,42 @@ const ClientList = () => {
             </div>
         </div>
             </div>
-            <div className='container'>
-                <div className="row">
-                    <div className='col-8'>
-                        the
+            <div className='container ' >
+                <div className="row border rounded mx-3" style={{height:'280px', backgroundColor: 'rgba(217, 217, 217, 0.16)'}}>
+                    <div className='col-8 '>
+                        <h3 className='mt-3 ms-4'>Set up your Outlet Control profile for clients to book <br />
+online.</h3>
+                    <p className='fs-5 ms-4'>Free up time and get your clients self booking online 24/7.</p>
+                    <button className='ms-4 mt-2 border-0 bg-white py-2 px-4 rounded'>start Now</button>
                     </div>
-                    <div className='col-4 client'>
-                <p>kkdi</p>
+                    <div className='col-4 client '>
+                   
+                <Card className=' mx-auto' style={{ width: '215px', marginTop:'85px' }}>
+      <Card.Img variant="top" src={client} />
+      <Card.Body>
+        
+      </Card.Body>
+    </Card>
+                
+                 
                     </div>
-                </div>
+             </div>
+
+        </div>
+            <div className='border rounded mx-4 mt-4 d-flex justify-content-between align-items-center
+' style={{height:'90px', 
+                          backgroundColor:'rgba(217, 217, 217, 0.16)'}}>
+                           <div>
+                           <input style={{width:'560px'}} className=' border-0 rounded-pill ms-3 
+                              text-center text-secondary py-2' type="text" placeholder='Search by 
+                               name, email or mobile number'/>
+                           </div>
+                           <div>
+                                <p>filter</p>
+                           </div>
+                           <div>
+                            <p>First name(A-Z)</p>
+                           </div>
 
             </div>
         </div>
