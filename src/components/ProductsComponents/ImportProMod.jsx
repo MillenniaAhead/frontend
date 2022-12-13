@@ -13,6 +13,8 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
 const ImportProMod = () => {
     const [show, setShow] = useState(false);
 
@@ -54,10 +56,7 @@ const ImportProMod = () => {
           height: '2px',
         }}
       />
-        
-         
-      
-        <Modal.Body>
+         <Modal.Body>
             <Container>
                <Row>
                  <span className='text-secondary'> Import products</span>
@@ -71,10 +70,16 @@ const ImportProMod = () => {
                    </Card>
                </Row>
             </Container>
-      
 
-        </Modal.Body>
-      
+         </Modal.Body>
+         <Modal.Body>
+          <Card className='border w-50 mx-auto h-50' >
+           <div className='mt-5 mb-5 '>
+            
+              <p className='text-success'>Upload CSV file</p>
+           </div>
+          </Card>
+         </Modal.Body>
         </Modal>
     </>
   )
