@@ -1,11 +1,58 @@
 import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Card from 'react-bootstrap/Card';
+import { TableContainer,Table,TableHead,TableBody,TableRow,TableCell,Paper } from '@mui/material'
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { Link } from 'react-router-dom';
 import client from '../../images/ClientList/client.jpg'
+import filter from '../../images/ClientList/filers.jpg'
+import FirstName from '../../images/ClientList/FirstName.jpg'
 
 import '../CSS/ClientList.css'
 
 const ClientList = () => {
+    const tableData = [{
+        "avatar": "J",
+        "Clint_name": "Jack Doe",
+        "email": "ckeam0@bing.com",
+        "Mobile_number":  '-',
+        "gender": "Male",
+        "reviews": "-",
+        "total_sales": "-"
+      }, {
+        "avatar": "M",
+        "Clint_name": "Mack Doe",
+        "email": "ngreveson1@rambler.ru",
+        "Mobile_number":'-',
+        "gender": "Male",
+        "reviews": "-",
+        "total_sales": "-"
+      }, {
+        "avatar": "L",
+        "Clint_name": "Liam  Doe",
+        "email": "cdidomenico2@walmart.com",
+        "Mobile_number":'-',
+        "gender": "Male",
+        "reviews": "-",
+        "total_Sales": "-"
+      }, {
+        "avatar": "S",
+        "Clint_name": "Shane Doe",
+        "email": "svandermark3@ihg.com",
+        "Mobile_number":'-',
+        "gender": "male",
+        "reviews": "-",
+        "total_sales": "-"
+      }, {
+        "avatar": "L",
+        "Clint_name": "Look Doe",
+        "email": "agreated4@jugem.jp",
+        "Mobile_number": "-",
+        "gender": "Male",
+        "reviews": "-",
+        "total_sales": "-"
+      }]
     return (
         <div>
             <div>
@@ -59,17 +106,62 @@ online.</h3>
                           backgroundColor:'rgba(217, 217, 217, 0.16)'}}>
                            <div className='d-flex align-items-center'>
                            <div>
-                           <input style={{width:'560px'}} className=' border-0 rounded-pill ms-3 
+                           <input style={{width:'560px', height: '48px'}} className=' border-0 rounded-pill ms-3 
                               text-center text-secondary py-2' type="text" placeholder='Search by 
                                name, email or mobile number'/>
                            </div>
-                           <div className='mt-3 ms-3'>
-                                <p className='fs-5 '>filter</p>
+                           <div style={{width: '150px', height:'48px'}} className=' ms-3 bg-white d-flex justify-content-around align-items-center border-0 rounded-pill'>
+                                <h6 className='fs-5 mt-1'>Filters</h6>
+                                <img  style={{width:"24px", height:'24px',}} src={filter} alt="" />
                            </div>
                            </div>
-                           <div>
-                            <p className='fs-5 '>First name(A-Z)</p>
+                           <div style={{width:'225px', height:"48px"}}  className=' bg-white d-flex justify-content-around align-items-center border-0 rounded-pill'>
+                            <h6 className='fs-5 mt-1'>First name(A-Z)</h6> 
+                            <img style={{width:"24px", height:'24px'}} src={FirstName} alt="" />
                            </div>
+
+            </div>
+
+            <div className='mt-3 mx-4'>
+            <TableContainer component={Paper}>
+      <Table aria-label = 'sample table'>
+          <TableHead>
+              <TableRow>
+                <TableCell><b>Clint name </b></TableCell>
+                <TableCell><b>Mobile number</b></TableCell>
+                <TableCell><b>Gender</b></TableCell>
+                <TableCell><b>Reviews</b></TableCell>
+                <TableCell><b>Total Sales</b></TableCell>
+              </TableRow>
+           </TableHead> 
+        <TableBody>
+         {
+          tableData.map(row => (
+            
+              <TableRow 
+                 key = {row.Clint_name}     
+              >
+                <TableCell>
+                  <Stack direction="row" spacing={2} className="m-2 ">
+                      <Avatar className='m-2 fs-2 w-40 h-40' > {row.avatar}</Avatar>
+                    <div className='m-1 '>
+                      <Link  >{row.Clint_name} </Link><br/>{row.email}
+                      </div>
+                  </Stack>
+                
+                </TableCell>
+                <TableCell>{row.Mobile_number}</TableCell>
+                <TableCell>{row.gender} </TableCell>
+                <TableCell>{row.reviews}</TableCell>
+                <TableCell>{row.total_sales}</TableCell>
+              </TableRow>
+            
+          ))
+         }
+        </TableBody>
+      </Table>
+    </TableContainer>
+  
 
             </div>
         </div>
