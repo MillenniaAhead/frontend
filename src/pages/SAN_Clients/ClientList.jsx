@@ -122,8 +122,8 @@ online.</h3>
 
             </div>
 
-            <div className='mt-3 mx-4'>
-            <TableContainer component={Paper}>
+            <div  className='mt-3 mx-4'>
+            <TableContainer style={{backgroundColor:'#F0F2F5'}} component={Paper}>
       <Table aria-label = 'sample table'>
           <TableHead>
               <TableRow>
