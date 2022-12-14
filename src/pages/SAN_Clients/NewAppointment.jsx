@@ -9,7 +9,7 @@ import calender from '../../images/snr/calendar.jpg'
 const SANService = () => {
     return (
         <div>
-       <button type='button' class="btn btn-link linkButton text-dark p-3"><AiOutlineClose/></button>
+       <button type='button' class="btn btn-link linkButton text-dark p-3">< AiOutlineClose/></button>
 
        <img className='rounded mx-auto d-block' src={Round} alt="" />
        <h2  className='text-center mt-3 mb-4'>Your automated message is set up</h2>

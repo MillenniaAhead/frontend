@@ -3,7 +3,9 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
+import AutomatedMessages from './AutomatedMessages';
 import ClientList from './ClientList';
+import Reviews from './Reviews';
 
 const ClientsAll = () => {
     return (
@@ -12,38 +14,38 @@ const ClientsAll = () => {
         <Col sm={2}>
           <Nav variant="tabs" className="flex-column">
             <Nav.Item>
-              <Nav.Link eventKey="first">Clients</Nav.Link>
+              <Nav.Link className='text-dark fs-5 fw-bold' eventKey="first">Clients</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="second">Clients list</Nav.Link>
+              <Nav.Link className='text-dark fs-5 fw-bold' eventKey="second">Clients list</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="third">Reviews</Nav.Link>
+              <Nav.Link className='text-dark fs-5 fw-bold' eventKey="third">Reviews</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="forth">Automated messages</Nav.Link>
+              <Nav.Link className='text-dark fs-5 fw-bold' eventKey="forth">Automated messages</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="fifth">Notifications</Nav.Link>
+              <Nav.Link className='text-dark fs-5 fw-bold' eventKey="fifth">Forms</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="sixth">Clients list</Nav.Link>
+              <Nav.Link className='text-dark fs-5 fw-bold' eventKey="sixth">Notifications</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>
         <Col sm={9}>
           <Tab.Content>
             <Tab.Pane eventKey="first">
-              <p>old</p>
+              <h1>Client</h1>
             </Tab.Pane>
             <Tab.Pane eventKey="second">
              <ClientList/>
             </Tab.Pane>
             <Tab.Pane eventKey="third">
-             <ClientList/>
+             <Reviews/>
             </Tab.Pane>
             <Tab.Pane eventKey="forth">
-             <ClientList/>
+             <AutomatedMessages/>
             </Tab.Pane>
             <Tab.Pane eventKey="fifth">
              <ClientList/>

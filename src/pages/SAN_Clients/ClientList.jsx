@@ -101,9 +101,7 @@ online.</h3>
              </div>
 
         </div>
-            <div className='border rounded mx-4 mt-4 d-flex justify-content-between align-items-center
-' style={{height:'90px', 
-                          backgroundColor:'rgba(217, 217, 217, 0.16)'}}>
+            <div className='border rounded mx-4 mt-4 d-flex justify-content-between align-items-center' style={{height:'90px',  backgroundColor:'rgba(217, 217, 217, 0.16)'}}>
                            <div className='d-flex align-items-center'>
                            <div>
                            <input style={{width:'560px', height: '48px'}} className=' border-0 rounded-pill ms-3 
@@ -115,7 +113,7 @@ online.</h3>
                                 <img  style={{width:"24px", height:'24px',}} src={filter} alt="" />
                            </div>
                            </div>
-                           <div style={{width:'225px', height:"48px"}}  className=' bg-white d-flex justify-content-around align-items-center border-0 rounded-pill'>
+                           <div style={{width:'225px', height:"48px"}}  className=' bg-white d-flex justify-content-around align-items-center border-0 rounded-pill me-3'>
                             <h6 className='fs-5 mt-1'>First name(A-Z)</h6> 
                             <img style={{width:"24px", height:'24px'}} src={FirstName} alt="" />
                            </div>
