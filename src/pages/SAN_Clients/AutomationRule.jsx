@@ -18,8 +18,8 @@ const AutomationRule = () => {
                 <h2 className='text-center'>Automation rules</h2>
             </div>
             <div style={{height:'174px', width:'670px'}} className='mx-auto border rounded'>
-                <h3 className='ms-3 mt-5'>Trigger</h3>
-                <p className='ms-3'>Automatically sends to all clients when their new <br />
+                <h3 className='ms-4 mt-4'>Trigger</h3>
+                <p className='ms-4 fs-5'>Automatically sends to all clients when their new <br />
 appointment is booked.</p>
 
             </div>
