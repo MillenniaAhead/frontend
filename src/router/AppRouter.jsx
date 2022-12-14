@@ -23,6 +23,9 @@ const SelectCustomer = lazy(() =>
 const ClientsAll = lazy(() =>
   import(/*webpackChunkName:'ClientsAll'*/ "@/pages/SAN_Clients/ClientsAll")
 );
+const AutomationRule = lazy(() =>
+  import(/*webpackChunkName:'AutomationRule'*/ "@/pages/SAN_Clients/AutomationRule")
+);
 const NewAppoinments = lazy(() =>
   import(/*webpackChunkName:'NewAppoinments'*/ "@/pages/SAN_Clients/NewAppointment")
 );
@@ -57,6 +60,7 @@ export default function AppRouter() {
           <PrivateRoute component={Setup} path="/setup" exact />
           <PrivateRoute component={Admin} path="/admin" exact />
           <PrivateRoute component={ClientsAll} path="/clientsall" exact />
+          <PrivateRoute component={AutomationRule} path="/automation" exact />
           <PrivateRoute component={NewAppoinments} path="/newAppoinment" exact />
 
           <PrivateRoute component={Logout} path="/logout" exact />
