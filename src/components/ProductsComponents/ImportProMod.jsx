@@ -72,11 +72,11 @@ const ImportProMod = () => {
             </Container>
 
          </Modal.Body>
-         <Modal.Body>
-          <Card className='border w-50 mx-auto h-50' >
-           <div className='mt-5 mb-5 '>
+         <Modal.Body bg="">
+          <Card className='border w-50 mx-auto h-50 ' >
+           <div className='mt-5 mb-5 '  >
             
-              <p className='text-success'>Upload CSV file</p>
+              <p className='text-success text-center'>Upload CSV file</p>
            </div>
           </Card>
          </Modal.Body>

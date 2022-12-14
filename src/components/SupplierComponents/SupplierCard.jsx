@@ -3,6 +3,7 @@ import Stack from 'react-bootstrap/Stack'
 import { Link } from 'react-router-dom'
 
 import Button from 'react-bootstrap/Button';
+import SupplierModal from './SupplierModal';
 const SupplierCard = () => {
   return (
     <Stack direction="horizontal" gap={3}>
@@ -11,7 +12,7 @@ const SupplierCard = () => {
         <p>Add and manage details of your suppliers. <Link>Learn more</Link> </p>
       </div>
     
-      <div className="bg-light border ms-auto"><Button variant="secondary">Add new </Button></div>
+      <div className="bg-light border ms-auto"><SupplierModal /></div>
     </Stack>
   )
 }
