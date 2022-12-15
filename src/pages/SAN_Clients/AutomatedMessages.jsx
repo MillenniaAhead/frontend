@@ -10,8 +10,13 @@ const AutomatedMessages = () => {
         <div className='mx-4 mt-2'>
             <h2>Keep clients up to date with their appointments</h2>
             <div>
-                <div>
+                <div className="container">
+                    <div className="row">
+                        <div className='col-lg-3'>
+                        
 
+                        </div>
+                    </div>
                 </div>
             </div>
 
