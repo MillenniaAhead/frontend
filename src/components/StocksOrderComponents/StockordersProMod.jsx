@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const ProductsModal = () => {
+const StockordersProMod = () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -21,7 +21,7 @@ const ProductsModal = () => {
   return (
     <>
       <Button variant="secondary" onClick={handleShow}  >
-        Import products
+      Create new order
       </Button>
 
         <Modal show={show} onHide={handleClose} className='text-center'   size="xl">
@@ -60,14 +60,13 @@ const ProductsModal = () => {
         <Modal.Body>
             <Container>
                <Row>
-                 <span className='text-secondary'> Import products</span>
-                 <span> <b><h4> Upload file</h4> </b></span>
+                 <span className='text-secondary'> Create stock order</span>
+                 <span> <b><h4> Select a supplier</h4> </b></span>
                  <span className='mb-4'> Upload a CSV file with your product data, or download and fill the template below <Link> Learn more</Link>  </span>
                    <Card className='w-50  mx-auto'>
 
-                    <p className='text-center mt-5'>For the best quality upload, input your data into the template below,
-                    then upload the file to import.</p>
-                    <span className='mt-2'><h6>Download template</h6></span>
+                    <p className='text-center mt-5'>Didn’t find anything</p>
+                    <span className='mt-2'>Try searching for another product</span>
                    </Card>
                </Row>
             </Container>
@@ -80,4 +79,4 @@ const ProductsModal = () => {
   )
 }
 
-export default ProductsModal
+export default StockordersProMod

@@ -9,7 +9,8 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import Logos from '../ProductsComponents/image/logo-6.png'
+
+
 
 
 
@@ -150,7 +151,7 @@ const SupplierModal = () => {
                        
                          
 
-                        <span> <img src ={Logos} alt ='' className='text-success' bg="success" /> Same as postal Address</span>
+                        <span>  Same as postal Address</span>
                      </Card.Body>
                     </Card>
                   
