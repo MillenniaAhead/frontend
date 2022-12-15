@@ -36,9 +36,7 @@ const StockordersProMod = () => {
          </div>
          <div className="bg-light border ms-auto border-1">
         
-         <Button variant="secondary" onClick={handleClose}>
-        Next Step
-         </Button>  
+         
          </div>
       
          <div className="" />
@@ -62,11 +60,12 @@ const StockordersProMod = () => {
                <Row>
                  <span className='text-secondary'> Create stock order</span>
                  <span> <b><h4> Select a supplier</h4> </b></span>
-                 <span className='mb-4'> Upload a CSV file with your product data, or download and fill the template below <Link> Learn more</Link>  </span>
+                 <span className='text-secondary mb-5'> Choose which supplier to order products from. To manage suppliers, click here</span>
+               
                    <Card className='w-50  mx-auto'>
 
                     <p className='text-center mt-5'>Didn’t find anything</p>
-                    <span className='mt-2'>Try searching for another product</span>
+                    <span className=' mb-5'>Try searching for another product</span>
                    </Card>
                </Row>
             </Container>
