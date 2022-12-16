@@ -51,7 +51,7 @@ const ClientsDetails = () => {
             <Box
       sx={{
         width: 940,
-        height: 300,
+        height: 290,
         border: '1px solid rgba(217, 217, 217, 0.80)',
         backgroundColor:'white',
         margin:'0px auto'

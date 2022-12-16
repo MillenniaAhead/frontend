@@ -9,6 +9,7 @@ import Avatar from '@mui/material/Avatar';
 import Invoice from './Invoice'
 import ClientFeed from './ClientFeed';
 import ClientsDetails from './ClientsDetails';
+import UserApoinmet from './UserApoinmet';
 
 
 const User = () => {
@@ -106,7 +107,7 @@ const User = () => {
               <ClientsDetails/>
             </Tab.Pane>
             <Tab.Pane eventKey="third">
-              <h1>date</h1>
+              <UserApoinmet/>
             </Tab.Pane>
             <Tab.Pane eventKey="forth">
               <h1>date</h1>
