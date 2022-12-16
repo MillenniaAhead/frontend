@@ -11,6 +11,12 @@ import ClientFeed from './ClientFeed';
 import ClientsDetails from './ClientsDetails';
 import UserApoinmet from './UserApoinmet';
 import UserDeposit from './UserDeposit';
+import UserPayment from './UserPayment';
+import UserMembership from './UserMembership';
+import UserFrom from './UserFrom';
+import UserProducts from './UserProducts';
+import UserReviews from './UserReviews';
+import UserFiles from './UserFiles';
 
 
 const User = () => {
@@ -64,37 +70,37 @@ const User = () => {
            <button type="button" className='border-0 mx-auto text-white mb-3 bg-secondary' style={{width:'122px', height:'30px'}}>NEW CLIENT</button>
             <button className='my-2 mx-2 py-2 border border-1 rounded'>Actions</button>
             <Nav.Item>
-              <Nav.Link eventKey="first">Client feed</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold'  eventKey="first">Client feed</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="second">Client details</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold'  eventKey="second">Client details</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="third">Appointments</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold' eventKey="third">Appointments</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="forth">Deposits</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold' eventKey="forth">Deposits</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="fifth">Payment methods</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold' eventKey="fifth">Payment methods</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="sixth">Memberships</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold' eventKey="sixth">Memberships</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="seventh">Forms</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold' eventKey="seventh">Forms</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="eighth">Products</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold' eventKey="eighth">Products</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="ninth">Invoices</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold' eventKey="ninth">Invoices</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="tenth">Reviews</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold' eventKey="tenth">Reviews</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="eleventh">Files</Nav.Link>
+              <Nav.Link className='text-dark text-center fs-5 fw-bold' eventKey="eleventh">Files</Nav.Link>
             </Nav.Item>
             
           </Nav>
@@ -114,25 +120,25 @@ const User = () => {
               <UserDeposit/>
             </Tab.Pane>
             <Tab.Pane eventKey="fifth">
-              <h1>date</h1>
+              <UserPayment/>
             </Tab.Pane>
             <Tab.Pane eventKey="sixth">
-              <h1>date</h1>
+              <UserMembership/>
             </Tab.Pane>
             <Tab.Pane eventKey="seventh">
-              <h1>date</h1>
+              <UserFrom/>
             </Tab.Pane>
             <Tab.Pane eventKey="eighth">
-              <h1>date</h1>
+              <UserProducts/>
             </Tab.Pane>
             <Tab.Pane eventKey="ninth">
             <Invoice/>
             </Tab.Pane>
             <Tab.Pane eventKey="tenth">
-              <h1>date</h1>
+             <UserReviews/>
             </Tab.Pane>
             <Tab.Pane eventKey="eleventh">
-              <h1>ki</h1>
+              <UserFiles/>
             </Tab.Pane>
           </Tab.Content>
         </Col>

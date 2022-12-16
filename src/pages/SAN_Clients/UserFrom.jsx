@@ -1,15 +1,14 @@
 import React from 'react';
 import filter from '../../images/ClientList/filers.jpg'
-import invoice from '../../images/ClientList/invoice.png'
-import Box from '@mui/material/Box';
+import Nofroms from '../../images/ClientList/Nofroms.png'
+import { Box } from '@mui/material';
 
-const Invoice = () => {
+const UserFrom = () => {
     return (
-        
-            <div>
+        <div>
             <div className='d-flex justify-content-between mx-5 mt-5'>
             <div>
-                <h1>Invoices</h1>
+                <h1>Forms</h1>
             </div>
             
             <div style={{width: '150px', height:'48px'}} className=' ms-3 bg-white d-flex justify-content-around align-items-center border-0 rounded-pill'>
@@ -27,14 +26,13 @@ const Invoice = () => {
         margin:'0px auto'
         
       }}
-    >  <img className='mx-auto d-block mt-5 pt-3' src={invoice} alt="" />
-    <p className='mt-2'> <span className='fs-4 fw-bolder'>No invoices history</span> <br />
-    <span className='fs-6'>All invoices for this client will appear here. Make a <br />
-sale to create your first invoice.</span></p>
+    >  <img className='mx-auto d-block mt-5 pt-3' src={Nofroms} alt="" />
+    <p className='mt-2'> <span className='fs-4 fw-bolder'>No forms</span> <br />
+    <span className='fs-6'>This client has no forms.</span></p>
     </Box>
              </div>
         </div>
     );
 };
 
-export default Invoice;
+export default UserFrom;
