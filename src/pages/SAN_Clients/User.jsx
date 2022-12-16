@@ -54,7 +54,7 @@ const User = () => {
                 <Tab.Container id="left-tabs-example" defaultActiveKey="first">
       <Row>
         <Col sm={3}>
-        <Avatar style={{width:"160px", height:'160px',fontSize:'56px' }} className="mx-auto mt-5">J</Avatar>
+        <Avatar style={{width:"160px", height:'160px',fontSize:'56px' }} className="mx-auto mt-5 ">J</Avatar>
           <Nav variant="tabs" className="flex-column">
           <p className='text-center'><span className='fs-3 fw-bolder'>John Doe</span> <br />
            john@example.com</p>
