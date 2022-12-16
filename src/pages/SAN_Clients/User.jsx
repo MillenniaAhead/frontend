@@ -6,7 +6,9 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Avatar from '@mui/material/Avatar';
-import ClientsFeed from './ClientsFeed';
+import Invoice from './Invoice'
+import ClientFeed from './ClientFeed';
+
 
 const User = () => {
     return (
@@ -97,10 +99,37 @@ const User = () => {
         <Col sm={9}>
           <Tab.Content>
             <Tab.Pane eventKey="first">
-             <ClientsFeed/>
+             <ClientFeed/>
             </Tab.Pane>
             <Tab.Pane eventKey="second">
               <h1>date</h1>
+            </Tab.Pane>
+            <Tab.Pane eventKey="third">
+              <h1>date</h1>
+            </Tab.Pane>
+            <Tab.Pane eventKey="forth">
+              <h1>date</h1>
+            </Tab.Pane>
+            <Tab.Pane eventKey="fifth">
+              <h1>date</h1>
+            </Tab.Pane>
+            <Tab.Pane eventKey="sixth">
+              <h1>date</h1>
+            </Tab.Pane>
+            <Tab.Pane eventKey="seventh">
+              <h1>date</h1>
+            </Tab.Pane>
+            <Tab.Pane eventKey="eighth">
+              <h1>date</h1>
+            </Tab.Pane>
+            <Tab.Pane eventKey="ninth">
+            <Invoice/>
+            </Tab.Pane>
+            <Tab.Pane eventKey="tenth">
+              <h1>date</h1>
+            </Tab.Pane>
+            <Tab.Pane eventKey="eleventh">
+              <h1>ki</h1>
             </Tab.Pane>
           </Tab.Content>
         </Col>
