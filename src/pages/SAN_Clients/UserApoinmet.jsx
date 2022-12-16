@@ -6,8 +6,8 @@ import '../CSS/ClientList.css'
 const UserApoinmet = () => {
     return (
         <div>
-        <div className='d-flex justify-content-between mx-4 mt-5'>
-            <div className='d-flex justify-content-between mx-3'>
+        <div className='d-flex justify-content-between mx-5 mt-5'>
+            <div >
                 <h1>Appointments</h1>
             </div>
             

@@ -10,6 +10,7 @@ import Invoice from './Invoice'
 import ClientFeed from './ClientFeed';
 import ClientsDetails from './ClientsDetails';
 import UserApoinmet from './UserApoinmet';
+import UserDeposit from './UserDeposit';
 
 
 const User = () => {
@@ -110,7 +111,7 @@ const User = () => {
               <UserApoinmet/>
             </Tab.Pane>
             <Tab.Pane eventKey="forth">
-              <h1>date</h1>
+              <UserDeposit/>
             </Tab.Pane>
             <Tab.Pane eventKey="fifth">
               <h1>date</h1>
