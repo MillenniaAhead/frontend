@@ -8,6 +8,7 @@ import Tab from 'react-bootstrap/Tab';
 import Avatar from '@mui/material/Avatar';
 import Invoice from './Invoice'
 import ClientFeed from './ClientFeed';
+import ClientsDetails from './ClientsDetails';
 
 
 const User = () => {
@@ -102,7 +103,7 @@ const User = () => {
              <ClientFeed/>
             </Tab.Pane>
             <Tab.Pane eventKey="second">
-              <h1>date</h1>
+              <ClientsDetails/>
             </Tab.Pane>
             <Tab.Pane eventKey="third">
               <h1>date</h1>

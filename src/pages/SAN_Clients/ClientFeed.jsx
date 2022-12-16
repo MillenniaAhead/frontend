@@ -39,7 +39,7 @@ const ClientFeed = () => {
     >
    <div className='d-inline'> 
   <div  className='float-start'> <Avatar style={{width:"80px", height:'80px',fontSize:'28px' }} className="text-center ms-3 p-3" >J</Avatar></div>
-      <div> <p><span className='fs-3 fw-bolder '>New appointment booked</span> <br />
+      <div className='mt-2'> <p><span className='fs-3 fw-bolder '>New appointment booked</span> <br />
     7 Sep 2022 at 7:39pm by Kondeti</p></div>
     <div> 
         <p className='text-start ms-4 mt-5'><span className='fs-4 fw-bolder  '>Haircut (₹40) with Kondeti on</span> <br />
