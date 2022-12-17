@@ -32,6 +32,9 @@ const NewAppoinments = lazy(() =>
 const UserDetails = lazy(() =>
   import(/*webpackChunkName:'UserDetails'*/ "@/pages/SAN_Clients/User")
 );
+const AddProduct = lazy(() =>
+  import(/*webpackChunkName:'AddProduct'*/ "@/pages/SAN_Clients/AddProduct")
+);
 
 const Lead = lazy(() => import(/*webpackChunkName:'LeadPage'*/ "@/pages/Lead"));
 const Product = lazy(() =>
@@ -66,6 +69,7 @@ export default function AppRouter() {
           <PrivateRoute component={AutomationRule} path="/automation" exact />
           <PrivateRoute component={NewAppoinments} path="/newAppoinment" exact />
           <PrivateRoute component={UserDetails} path="/user" exact />
+          <PrivateRoute component={AddProduct} path="/addProduct" exact />
 
           <PrivateRoute component={Logout} path="/logout" exact />
           <PublicRoute path="/login" render={() => <Redirect to="/" />} />
