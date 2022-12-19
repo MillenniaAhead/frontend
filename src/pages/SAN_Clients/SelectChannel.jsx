@@ -3,16 +3,18 @@ import Switch from '@mui/material/Switch';
 import Box from '@mui/material/Box';
 import EmailPh from '../../images/ClientList/EmailPh.png'
 import EmailNT from '../../images/ClientList/emailNoti.png'
+import { AiOutlineClose } from 'react-icons/ai';
+
 
 
 const SelectChannel = () => {
   const label = { inputProps: { 'aria-label': 'Color switch demo' } };
     return (
         <div>
-            <div className=' px-5 d-flex justify-content-between align-items-center'>
+            <div className=' px-5 d-flex justify-content-between align-items-center mt-4'>
                   <div>
-                    <button type='button' class="btn btn-link linkButton">x</button>
-                    <button type="button" class="btn btn-link linkButton">Previous</button></div>
+                    <button type='button' className="border-0 fs-4 text-dark"><AiOutlineClose/></button>
+                    <button type="button" className="border-0 fs-4 text-dark">Previous</button></div>
                   <div><button type="button" class="btn btn-secondary nextButton">Next Step</button></div>
             </div>
             <div>
