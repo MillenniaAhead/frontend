@@ -30,7 +30,7 @@ const AutomatedMessages = () => {
                 clients when an <br />
                 appointment is booked <br />
                 for them.</p>
-                    <div className='mt-auto'>
+                    <div>
                     <button type="button" class="btn btn-success">EMAIL</button>
                     <button type="button" class="btn btn-success ms-2">APP</button>
                     </div>
@@ -141,8 +141,8 @@ review.</p>
                 appointment is booked <br />
                 for them.</p>
                     <div >
-                    <button type="button" class="btn btn-success">EMAIL</button>
-                    <button type="button" class="btn btn-success ms-2">APP</button>
+                    <button type="button" class="btn btn-secondary">Disabled</button>
+                   
                     </div>
             </div>
                    </div>
