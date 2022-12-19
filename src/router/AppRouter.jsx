@@ -38,11 +38,15 @@ const AddProduct = lazy(() =>
 const SelectChannel = lazy(() =>
   import(/*webpackChunkName:'SelectChannel'*/ "@/pages/SAN_Clients/SelectChannel")
 );
+const Paperless = lazy(() =>
+  import(/*webpackChunkName:'Paperless'*/ "@/pages/SAN_Clients/Paperless")
+);
 
 const Lead = lazy(() => import(/*webpackChunkName:'LeadPage'*/ "@/pages/Lead"));
 const Product = lazy(() =>
   import(/*webpackChunkName:'ProductPage'*/ "@/pages/Product")
 );
+
 
 const Logout = lazy(() =>
   import(/*webpackChunkName:'LogoutPage'*/ "@/pages/Logout")
@@ -74,6 +78,7 @@ export default function AppRouter() {
           <PrivateRoute component={UserDetails} path="/user" exact />
           <PrivateRoute component={AddProduct} path="/addProduct" exact />
           <PrivateRoute component={SelectChannel} path="/selectChannel" exact />
+          <PrivateRoute component={Paperless} path="/paperless" exact />
 
           <PrivateRoute component={Logout} path="/logout" exact />
           <PublicRoute path="/login" render={() => <Redirect to="/" />} />

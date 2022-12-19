@@ -11,3 +11,10 @@
 .client{
     background-image: url("images/ClientList/background.jpg");
 }
+
+.paperless{
+    background-image: url('images/ClientList/Ellipse 15.png');
+    background-repeat: no-repeat;
+    height:1326px;
+   
+}
