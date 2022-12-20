@@ -17,14 +17,15 @@ const Froms = () => {
             </div>
         </div>
         <div>
-        <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableContainer style={{backgroundColor:'#F0F2F5'}} component={Paper}>
+      <Table  aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell>Consultation form name</TableCell>
             <TableCell align="right">Services</TableCell>
             <TableCell align="right">Request</TableCell>
             <TableCell align="right">Status</TableCell>
+            <TableCell align="right"></TableCell>
             
           </TableRow>
         </TableHead>
@@ -39,6 +40,7 @@ const Froms = () => {
               <TableCell align="right">All services</TableCell>
               <TableCell align="right">Before appointments</TableCell>
               <TableCell align="right"><span className='bg-danger mt-2 text-center px-2 py-1'>INACTIVE</span></TableCell>
+              <TableCell align="right"><span className='fw-bolder fs-4'>...</span></TableCell>
               
             </TableRow>
          
