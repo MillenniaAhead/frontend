@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import AutomatedMessages from './AutomatedMessages';
 import ClientList from './ClientList';
+import Froms from './Froms';
 import Reviews from './Reviews';
 
 const ClientsAll = () => {
@@ -48,7 +49,7 @@ const ClientsAll = () => {
              <AutomatedMessages/>
             </Tab.Pane>
             <Tab.Pane eventKey="fifth">
-             <ClientList/>
+             <Froms/>
             </Tab.Pane>
             <Tab.Pane eventKey="sixth">
              <ClientList/>
